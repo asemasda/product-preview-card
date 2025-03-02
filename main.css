@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#f2ebe3;
+}
+#container{
+    width: 517px;
+    height: 336px;
+    margin: 7rem auto;
+    display: flex;
+}
+.img-prdouct {
+    width: 136%; 
+    height: 100%; 
+    background: none;
+}
+
+.img-prdouct img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px 0px 0px;
+}
+.details-prdouct{
+    background-color: #ffff;
+    margin-right: 3rem;
+    padding-left: 1.5rem;
+    padding-top: 1.2rem;
+    padding-right: 1.8rem; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;  
+}
+h1{
+    font-size: 11px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 4px;
+    opacity: 0.6;
+    font-weight: 500;  
+    padding-bottom: 1rem;
+}
+h2{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 28px;
+    margin-bottom: 0rem;
+    padding-bottom: 1rem;
+}
+p{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    opacity: 0.6;
+    padding-bottom: 1rem;
+}
+
+h3{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: #3c8067;
+    opacity: 0.9;
+    display: flex;
+    gap: 28px;
+    font-size: 20px;
+    padding-bottom: 3rem;
+}
+
+.old-price{
+    color: #6c7289;
+    opacity: .7;
+    font-size: 11px;
+    position: relative;
+    top: 4px;
+}
+
+.add-cart{
+    background-color: #3c8067;
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    position: relative;
+    bottom: 2rem;  
+    border-radius: 6px; 
+    cursor: pointer;
+}
+
+.add-cart img{
+    position: relative;
+    left: -2px;
+    top: -4px;
+}
+.text-card{
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    position: relative;
+    top: -8px; 
+    left: 10px;
+    color: #ffff;
+}
+
+
+/*                       Media Queries                                 */
+
+@media  screen and (max-width: 400px) {
+    
+
+    #container{
+        width: 474px;
+        height: 367px;
+        margin: 7rem 2rem;
+        display: grid;
+    }
+    .img-prdouct {
+        width: 30%; 
+        height: 97px; 
+        position: relative;
+        top: -1rem; 
+        right: -8rem;
+        background: url(./images/image-product-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        transform: scale(2.6); 
+    }
+    .img-prdouct img{
+    display: none;
+    }
+    .details-prdouct{
+        width: 367px;
+        height: 289px; 
+        position: relative;
+        bottom: -62px; 
+        left: 1rem;
+    }
+    h1{
+        font-size: 10px;
+        padding-bottom: 6px;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 29px;
+    }
+    .break{
+        display: none;
+    }
+    p{
+        font-size: 15px;
+        padding-bottom: 0rem;
+    }
+    h3{
+        font-size:25px;
+        position: relative;
+        bottom: -1rem;
+    }
+    .add-cart{
+        position: relative;
+        bottom: 1rem; 
+        right: 0rem; 
+    }
+    
+}
+
+@media screen and (min-width: 401px) and (max-width: 540px) {
+    #container{
+        width: 500px;
+        height: 367px;
+        margin: 7rem 2rem;
+        display: grid;
+    }
+
+    .img-prdouct {
+        width: 30%; 
+        height: 97px; 
+        position: relative;
+        top: -1rem; 
+        right: -8rem;
+        background: url(./images/image-product-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        transform: scale(2.6); 
+        
+    }
+    .img-prdouct img{
+        display: none;
+    }
+    .details-prdouct{
+        width: 391px;
+        height: 289px; 
+        position: relative;
+        bottom: -62px; 
+        left: 7px;
+    }
+    h1{
+        font-size: 10px;
+        padding-bottom: 6px;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 29px;
+    }
+    .break{
+        display: none;
+    }
+    p{
+        font-size: 15px;
+        padding-bottom: 0rem;
+    }
+    h3{
+        font-size:25px;
+        position: relative;
+        bottom: -1rem;
+    }
+    .add-cart{
+        position: relative;
+        bottom: 1rem; 
+        right: 0rem; 
+    }
+
+}
+
+@media screen and (min-width: 541px) and (max-width: 600px) {
+
+    #container{
+        margin: 7rem 4rem;
+    }
+
+}
